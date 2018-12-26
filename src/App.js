@@ -2,11 +2,12 @@
 
  import React from 'react';
  import ReactDOM from 'react-dom';
+import NavBar from './js/components/presentational/NavBar';
 
  
  const App = () => (
    <div>
-      <h1>Hello world!!</h1>
+      <NavBar />
    </div>
  )
 
