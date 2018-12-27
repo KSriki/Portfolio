@@ -1,6 +1,7 @@
 import React from 'react';
 
   import rs from 'reactstrap'; 
+import ProjectsList from '../presentational/ProjectsList';
 
 
   export default class WorkContainer extends React.Component {
@@ -11,7 +12,11 @@ import React from 'react';
     render(){
 
 
-        return (<div>Work Goes Here</div>);
+        return (<div>
+
+            <ProjectsList/>
+            Work Goes Here
+        </div>);
 
     }
 

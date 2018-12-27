@@ -43,6 +43,7 @@
     "css-loader": "^2.1.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-youtube": "^7.8.0",
     "reactstrap": "^6.5.0",
     "style-loader": "^0.23.1"
   }
