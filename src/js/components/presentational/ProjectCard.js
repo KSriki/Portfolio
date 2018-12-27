@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardImg, CardText, CardBody, Container,
   CardTitle, CardSubtitle, Button,Collapse } from 'reactstrap';
+  import YouTube from 'react-youtube'
 
   //no conditional rendering needed since based on array and that array is never empty
 class ProjectCard extends React.Component {
@@ -16,6 +17,11 @@ class ProjectCard extends React.Component {
     render(){
 
         const proj = this.props.project;
+        const opts = {
+            height: '390',
+            width: '640',
+          };
+
         return (
             <div>
             <Card>
@@ -24,10 +30,14 @@ class ProjectCard extends React.Component {
                 <CardTitle>{proj.name}</CardTitle>
                 <CardSubtitle>{proj.tagline}</CardSubtitle>
                 <CardText>{proj.summary}</CardText>
-                <Button onClick={this.toggle} style={{ marginBottom: '1rem' }}>Demo Video</Button>
+                <Button outline color="secondary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Demo Video</Button>
                 <Collapse isOpen={this.state.collapse}>
                     <Container>
-                        {proj.demo}
+                        <YouTube
+                            videoId={proj.demo}
+                            opts={opts}
+                            onReady={this._onReady}
+                        />
                     </Container>
                 </Collapse>
                 </CardBody>
