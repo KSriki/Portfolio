@@ -1,7 +1,8 @@
 import React from 'react';
 
   import rs from 'reactstrap'; 
-import ProjectsList from '../presentational/ProjectsList';
+import ProjectsList from './ProjectsList';
+import EventsList from './EventsList';
 
 
   export default class WorkContainer extends React.Component {
@@ -15,6 +16,8 @@ import ProjectsList from '../presentational/ProjectsList';
         return (<div>
 
             <ProjectsList/>
+            {/* either work history or github activity */}
+            <EventsList />
             Work Goes Here
         </div>);
 

@@ -27,7 +27,7 @@ class ProjectCard extends React.Component {
             <Card>
                 {/* <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" /> */}
                 <CardBody>
-                <CardTitle>{proj.name}</CardTitle>
+                <CardTitle>{proj.name} - {proj.timeline}</CardTitle>
                 <CardSubtitle>{proj.tagline}</CardSubtitle>
                 <CardText>{proj.summary}</CardText>
                 <Button outline color="secondary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Demo Video</Button>

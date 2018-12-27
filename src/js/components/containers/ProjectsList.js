@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProjectCard from './ProjectCard';
+import ProjectCard from '../presentational/ProjectCard';
 import { ListGroup, ListGroupItem, Container } from 'reactstrap';
 
 import projects from '../../constants/projects'
