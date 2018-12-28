@@ -12,11 +12,10 @@ import { Card, CardImg, CardText, CardBody, Container,
         render(){
 
             const evt = this.props.event;
+            const options = {weekday: 'short', month: 'short', day: 'numeric' };
 
             return evt ? (<div><Container>
-                Type: {evt.type}, 
-                Repo: {evt.repo.name},
-                Time: {evt.created_at}
+                {evt.type} for {evt.repo.name} @ {(new Date(evt.created_at)).toLocaleString('eng',options)}
             </Container></div>) : null
         }
   }

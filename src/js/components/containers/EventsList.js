@@ -28,10 +28,10 @@ import Event from '../presentational/Event'
         return (<div>
         <Container fluid>
         <h1>My activity</h1>
-        <ListGroup>
+        <ListGroup >
             {   this.state.eventsList.map(
                     evt => {
-                        return (<Event event={evt}/>)
+                        return (<ListGroupItem color="info"><Event event={evt}/></ListGroupItem>)
                     }
                 )
             }
