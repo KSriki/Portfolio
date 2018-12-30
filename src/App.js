@@ -9,12 +9,12 @@ import ContactContainer from './js/components/containers/ContactContainer';
 
  
  const App = () => (
-   <div>
+  <React.Fragment>
       <NavBar />
       <AboutContainer />
       <WorkContainer/>
       <ContactContainer/>
-   </div>
+   </React.Fragment>
  )
 
  export default App;

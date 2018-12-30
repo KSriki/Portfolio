@@ -18,7 +18,7 @@ export default class NavBar extends React.Component {
       render() {
         return (
       
-            <Navbar color="light" light expand="md" fixedTop>
+            <Navbar color="light" light expand="md" sticky="top">
               <NavbarBrand href="/">Portfolio</NavbarBrand>
             
                 <Nav className="ml-auto" navbar>

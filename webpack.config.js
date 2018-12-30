@@ -42,5 +42,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
             filename: "[name].css",
             chunkFilename: "[id].css"
           })
-     ]
+     ],
+     performance: { hints: false }
   }
