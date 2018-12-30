@@ -17,8 +17,8 @@ export default class NavBar extends React.Component {
     
       render() {
         return (
-          <div>
-            <Navbar color="light" light expand="md">
+      
+            <Navbar color="light" light expand="md" fixedTop>
               <NavbarBrand href="/">Portfolio</NavbarBrand>
             
                 <Nav className="ml-auto" navbar>
@@ -34,7 +34,7 @@ export default class NavBar extends React.Component {
                 </Nav>
         
             </Navbar>
-          </div>
+ 
         );
       }
     }
