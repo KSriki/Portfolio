@@ -17,10 +17,10 @@ import projects from '../../constants/projects'
 
 
         return (<React.Fragment>
-        <Container fluid>
-        <h1>Some of my personal projects: </h1>
+        <Container fluid style={{width: "65%", textAlign:"center"}}>
+        <h3>Some of my personal projects: </h3>
         <ListGroup>
-            {projects.map(project => {return (<ListGroupItem><ProjectCard key={project.name} project={project}/> </ListGroupItem> )})}
+            {projects.map(project => {return (<ListGroupItem key={project.name} ><ProjectCard project={project}/> </ListGroupItem> )})}
             
 
 

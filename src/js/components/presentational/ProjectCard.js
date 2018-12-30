@@ -18,8 +18,8 @@ class ProjectCard extends React.Component {
 
         const proj = this.props.project;
         const opts = {
-            height: '390',
-            width: '640',
+            height: '360',
+            width: '100%',
           };
 
         return (

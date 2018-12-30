@@ -3,7 +3,7 @@
 
 import React from 'react';
 
-import { ListGroup, ListGroupItem, Container } from 'reactstrap';
+import { ListGroup, ListGroupItem, Container} from 'reactstrap';
 import Event from '../presentational/Event'
 
   export default class EventsList extends React.Component {
@@ -26,12 +26,17 @@ import Event from '../presentational/Event'
      
 
         return (<React.Fragment>
-        <Container fluid>
-        <h1>My activity</h1>
-        <ListGroup >
+        <Container fluid style={{width: "65%", textAlign:"center"}}>
+        <h3>My recent activity</h3>
+        <ListGroup>
             {   this.state.eventsList.map(
                     evt => {
-                        return (<ListGroupItem color="info"><Event event={evt}/></ListGroupItem>)
+                        return ( 
+                        
+                                    <ListGroupItem color="info" key={evt.id}>
+                                         <Event event={evt}/>
+                                    </ListGroupItem>
+                                )
                     }
                 )
             }

@@ -18,7 +18,7 @@ export default class NavBar extends React.Component {
       render() {
         return (
       
-            <Navbar color="light" light expand="md" sticky="top" style={{"border-bottom": "1px solid #444"}}>
+            <Navbar color="light" light expand="md" sticky="top" style={{"borderBottom": "1px solid #444"}}>
               <NavbarBrand href="/">Portfolio</NavbarBrand>
             
                 <Nav className="ml-auto" navbar>
