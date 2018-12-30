@@ -25,7 +25,7 @@ import Event from '../presentational/Event'
 
      
 
-        return (<div>
+        return (<React.Fragment>
         <Container fluid>
         <h1>My activity</h1>
         <ListGroup >
@@ -37,7 +37,7 @@ import Event from '../presentational/Event'
             }
         </ListGroup>
         </Container>
-        </div>);
+        </React.Fragment>);
 
     }
 

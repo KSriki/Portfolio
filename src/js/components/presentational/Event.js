@@ -14,9 +14,9 @@ import { Card, CardImg, CardText, CardBody, Container,
             const evt = this.props.event;
             const options = {weekday: 'short', month: 'short', day: 'numeric' };
 
-            return evt ? (<div><Container>
+            return evt ? (<React.Fragment><Container>
                 {evt.type} for {evt.repo.name} @ {(new Date(evt.created_at)).toLocaleString('eng',options)}
-            </Container></div>) : null
+            </Container></React.Fragment>) : null
         }
   }
 

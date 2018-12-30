@@ -16,7 +16,7 @@ import projects from '../../constants/projects'
     render(){
 
 
-        return (<div>
+        return (<React.Fragment>
         <Container fluid>
         <h1>Some of my personal projects: </h1>
         <ListGroup>
@@ -26,7 +26,7 @@ import projects from '../../constants/projects'
 
         </ListGroup>
         </Container>
-        </div>);
+        </React.Fragment>);
 
     }
 
