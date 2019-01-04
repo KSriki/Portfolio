@@ -1,4 +1,12 @@
 node_modules/
-server.js
+
 webpack.dev.config.js
 webpack.prod.config.js
+
+
+# only minified pushed
+
+# src/*
+# dist/*
+# build/static/css/*.map
+# build/static/js/*.map
