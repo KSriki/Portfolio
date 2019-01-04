@@ -14,7 +14,14 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
          rules:[{
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel-loader'
+            use: [
+              {
+                loader: 'babel-loader',
+                options: {
+                  cacheDirectory: true,
+                },
+              },
+            ],
          },
          {
             test: /\.css$/,
