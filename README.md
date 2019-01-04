@@ -1,25 +1,38 @@
 # Portfolio
-My Basic Portfolio Page
+<b> A basic portfolio page </b>
 
+This is a basic portfolio page I created to demonstrate some of my React capabilities. I plan on using this page long term for demonstrating my abilities.
 
+## Author
 
+Srikant Kumar Kalaputapu
 
 Component Hierarchy
 
+## Tech/framework used
+
+This is a basic Single-Page Application.
+
+<b>Built with</b>
+- [React](https://reactjs.org/)
+- [Webpack](https://webpack.js.org/)
+- [Babel] (https://babeljs.io/)
+- [Bootstrap] (https://getbootstrap.com/)
+- [reactstrap](https://reactstrap.github.io/)
 
 
+## Component Hierarchy
 - App
     - NavBar
     - AboutContainer
         - Header
         - Summary
-        - Pull data from my social media or have status based on current status?
-        - Right now im freaking unemployed so write Status: Looking for work. 
     - WorkContainer
         - Personal Projects
-            - Drop down with embedded Demos/Summary Resume stuff
-        - Work history
-            - Timeline from dropdown?
-        - My Git Activity in the last week 
+            - ProjectCard = Card with collabsable link for demo
+        - EventsList
+            - Event = Github events
     - ContactContainer
         - Links to Social Media
+    - Constants
+        - Raw data for each project
