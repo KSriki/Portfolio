@@ -16,10 +16,16 @@ This is a basic Single-Page Application.
 <b>Built with</b>
 - [React](https://reactjs.org/)
 - [Webpack](https://webpack.js.org/)
-- [Babel] (https://babeljs.io/)
-- [Bootstrap] (https://getbootstrap.com/)
+- [Babel](https://babeljs.io/)
+- [Bootstrap](https://getbootstrap.com/)
 - [reactstrap](https://reactstrap.github.io/)
+- [Node](https://nodejs.org/en/)
+- [Express](https://expressjs.com/)
 
+## About
+
+dist contains the minified/production build. 
+server.js contains the express server
 
 ## Component Hierarchy
 - App
@@ -36,3 +42,5 @@ This is a basic Single-Page Application.
         - Links to Social Media
     - Constants
         - Raw data for each project
+
+
