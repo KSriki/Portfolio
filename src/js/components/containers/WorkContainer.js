@@ -13,13 +13,13 @@ import EventsList from './EventsList';
     render(){
 
 
-        return (<React.Fragment>
+        return (<div id="work">
 
             <ProjectsList/>
             {/* either work history or github activity */}
             <EventsList />
             {/* Work Goes Here */}
-        </React.Fragment>);
+        </div>);
 
     }
 

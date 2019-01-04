@@ -14,9 +14,11 @@ import { Card, CardImg, CardText, CardBody, Container,
             const evt = this.props.event;
             const options = {weekday: 'short', month: 'short', day: 'numeric' };
 
-            return evt ? (<React.Fragment><Container fluid className="text-justify" >
+            return evt ? (<React.Fragment>
+            <Container fluid className="text-center" >
                 {evt.type} for {evt.repo.name} @ {(new Date(evt.created_at)).toLocaleString('eng',options)}
-            </Container></React.Fragment>) : null
+            </Container>
+            </React.Fragment>) : null
         }
   }
 

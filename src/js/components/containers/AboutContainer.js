@@ -12,10 +12,10 @@ import Summary from '../presentational/Summary';
 
 
         return (
-            <React.Fragment>
+            <div id="about">
                 <Header/>
                 <Summary/>
-            </React.Fragment>
+            </div>
           );
 
     }

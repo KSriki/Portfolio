@@ -23,13 +23,13 @@ export default class NavBar extends React.Component {
             
                 <Nav className="ml-auto" navbar>
                   <NavItem>
-                    <NavLink href="/">About</NavLink>
+                    <NavLink href="/#about">About</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/">Work</NavLink>
+                    <NavLink href="/#work">Work</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/">Contact</NavLink>
+                    <NavLink href="/#contact">Contact</NavLink>
                   </NavItem>
                 </Nav>
         

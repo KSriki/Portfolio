@@ -33,7 +33,7 @@ import Event from '../presentational/Event'
                     evt => {
                         return ( 
                         
-                                    <ListGroupItem color="info" key={evt.id}>
+                                    <ListGroupItem  key={evt.id}>
                                          <Event event={evt}/>
                                     </ListGroupItem>
                                 )
