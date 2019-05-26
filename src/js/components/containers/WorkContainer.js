@@ -17,6 +17,7 @@ import EventsList from './EventsList';
 
             <ProjectsList/>
             {/* either work history or github activity */}
+
             <EventsList />
             {/* Work Goes Here */}
         </div>);

@@ -18,7 +18,7 @@ import projects from '../../constants/projects'
 
         return (<React.Fragment>
         <Container fluid style={{width: "65%", textAlign:"center"}}>
-        <h3>Some of my personal projects: </h3>
+        <h3>Personal Projects made for the FlatIron School boot camp: </h3>
         <ListGroup>
             {projects.map(project => {return (<ListGroupItem key={project.name} ><ProjectCard project={project}/> </ListGroupItem> )})}
             

@@ -6,7 +6,7 @@ webpack.prod.config.js
 
 # only minified pushed
 
-# src/*
+src/*
 # dist/*
 # build/static/css/*.map
 # build/static/js/*.map
